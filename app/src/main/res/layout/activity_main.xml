@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="xyz.barbararodrigues.exerciciorest.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lista de Restaurantes"
+        android:id="@+id/textView"
+        android:textSize="20sp" />
+
+    <!--<Button-->
+        <!--android:text="Buscar Restaurantes"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="87dp"-->
+        <!--android:id="@+id/btnMessage"-->
+        <!--android:layout_below="@+id/textView"-->
+        <!--android:layout_centerHorizontal="true" />-->
+        <fragment
+            android:layout_marginTop="15pt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="xyz.barbararodrigues.exerciciorest.RestActivity"
+            android:id="@+id/listFragment"/>
+</FrameLayout>
